@@ -1,0 +1,22 @@
+/* ... (estilos de tailwind) ... */
+
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Asegura un fondo negro si el CSS tarda en cargar */
+}
+
+.crosshair {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+}
